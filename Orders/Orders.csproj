@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AssemblyName>TradingEngine.Orders</AssemblyName>
+        <RootNamespace>TradingEngine.Orders</RootNamespace>
+        <PackageId>TradingEngine.Orders</PackageId>
+        <Authors>TradingEngine.Orders</Authors>
+        <Company>TradingEngine.Orders</Company>
+        <Product>TradingEngine.Orders</Product>
+    </PropertyGroup>
+
+</Project>

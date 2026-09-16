@@ -14,6 +14,15 @@
       <Content Remove="Logger/**" />
       <EmbeddedResource Remove="Logger/**" />
       <None Remove="Logger/**" />
+      <Compile Update="Orders\OrderCore.cs">
+        <Link>Order\OrderCore.cs</Link>
+      </Compile>
+      <Compile Update="Orders\IOrderCore.cs">
+        <Link>Order\IOrderCore.cs</Link>
+      </Compile>
+      <Compile Update="Orders\Order.cs">
+        <Link>Order\Order.cs</Link>
+      </Compile>
     </ItemGroup>
 
     <ItemGroup>
