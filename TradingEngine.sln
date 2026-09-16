@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Instrument", "Instrument\In
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orders", "Orders\Orders.csproj", "{DD501061-99EA-4A5F-9EA3-933671A53B9D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderBook", "OrderBook\OrderBook.csproj", "{79F13732-3A39-4E9B-979F-AD09DB26685F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{DD501061-99EA-4A5F-9EA3-933671A53B9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD501061-99EA-4A5F-9EA3-933671A53B9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD501061-99EA-4A5F-9EA3-933671A53B9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79F13732-3A39-4E9B-979F-AD09DB26685F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79F13732-3A39-4E9B-979F-AD09DB26685F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79F13732-3A39-4E9B-979F-AD09DB26685F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79F13732-3A39-4E9B-979F-AD09DB26685F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
