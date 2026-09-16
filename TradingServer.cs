@@ -1,26 +1,26 @@
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using TradingEngine.Core.Configuration;
+using TradingEngine.Logger;
 
 namespace TradingEngine.Core;
 
-public sealed class TradingServer(ILogger<TradingServer> logger, IOptions<TradingServerConfiguration> config)
+public sealed class TradingServer(ILogger logger, IOptions<TradingServerConfiguration> config)
     : BackgroundService, ITradingServer
 {
-    private readonly ILogger<TradingServer> _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+    private readonly ILogger _logger = logger ?? throw new ArgumentNullException(nameof(logger));
 
     private readonly TradingServerConfiguration _config =
         config.Value ?? throw new ArgumentNullException(nameof(config));
 
     protected override Task ExecuteAsync(CancellationToken stoppingToken)
     {
-        _logger.LogInformation("Starting Trading Server");
+        _logger.Info("TradingServer", "Starting Trading Server");
         while (!stoppingToken.IsCancellationRequested)
         {
         }
 
-        _logger.LogInformation("TradingServer is stopping...");
+        _logger.Info("TradingServer", "TradingServer is stopping...");
 
         return Task.CompletedTask;
     }
